@@ -1,0 +1,39 @@
+format = """
+[](#628AAB)$directory[](fg:#628AAB bg:#9B6A9E)\
+$git_branch$git_status[](fg:#9B6A9E bg:#1A4495)\
+$python[](fg:#1A4495 bg:#ffffff)\
+$conda[](fg:#ffffff bg:#6875CF)\
+$time[](fg:#6875CF)\n\
+$character
+"""
+
+add_newline = true
+
+[directory]
+style = 'bg:#628AAB fg:#DEFFFF'
+read_only = '🔒'
+format = '[$path $read_only]($style)'
+
+[git_branch]
+style = 'bg:#9B6A9E fg:#DEFFFF'
+symbol = ''
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = 'bg:#9B6A9E fg:#DEFFFF'
+format = '([\[$all_status$ahead_behind\] ]($style))'
+
+[python]
+style = 'bg:#1A4495 fg:#ffd642'
+symbol = ""
+format = "[ $symbol $version ]($style)"
+
+[conda]
+style = 'bg:#ffffff fg:#43b02a'
+symbol = '🅒 '
+format = '[ $symbol$environment ]($style)'
+
+[time]
+disabled = false
+style = 'bg:#6875CF fg:#deffff'
+format = '[ $time]($style)'
