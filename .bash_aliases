@@ -25,6 +25,13 @@ alias gits='git status'
 alias nrun='nextflow run'
 alias nlog='nextflow log'
 
+# kubectl
+alias kc='kubectl'
+alias kca='kubectl apply'
+alias kcaf='kubectl apply -f'
+alias kcd='kubectl describe'
+alias kcg='kubectl get'
+
 # cli utils
 alias r='ranger'
 alias v='vim'
